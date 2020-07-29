@@ -3,8 +3,11 @@ Below, I'll be implementing a basic convolutional neural network (CNN) in Python
 
 In this repository, you'll find the following materials: 
 
-# unicorn_narwhal_photos
-These contain the four hundred images I used for both testing and training. 
+## train
+These contain images used for training. Four hundred images were originally used, but one hundred are posted here. 
+
+## test
+These contain the eighty total images used for testing. 
 
 ## unicorn_narwhal_model_train
 Here, we prepare our images for training using Keras, and then both build and save our binary classification model. 
