@@ -1,0 +1,21 @@
+import tensorflow as tf
+tf.logging.set_verbosity(tf.logging.ERROR)
+import numpy as np
+from tensorflow.keras.preprocessing import image
+
+final_unicorn_narwhal_model = tf.keras.models.load_model('mymodel.h5')
+
+test_photo = '/Users/shaynechammavanijakul/Desktop/python projects/unicorn vs narwhal/test/test4.jpeg'
+
+img = image.load_img(test_photo, target_size=(128, 128))
+x = image.img_to_array(img)
+x = np.expand_dims(x, axis=0)
+
+images = np.vstack([x])
+classes = final_unicorn_narwhal_model.predict(images)
+print(classes[0])
+
+if classes[0]<0.5:
+    print("That's a narwhal!")
+else:
+    print("That's a unicorn!")
