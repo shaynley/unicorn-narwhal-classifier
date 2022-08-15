@@ -1,5 +1,5 @@
 # Unicorn vs. Narwhal Classifier
-Below, I'll be implementing a basic convolutional neural network (CNN) in Python to classify images of unicorns and narwhals. You can read the full blog post, which contains more background on our project in addition to more detailed description in each step: https://shaynechammavanijakul.com/2020/07/14/unicorn-narwhal-classifier/.
+Below, I'll be implementing a basic convolutional neural network (CNN) in Python to classify images of unicorns and narwhals. 
 
 In this repository, you'll find the following materials: 
 
